@@ -1,0 +1,120 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    overflow: hidden;
+}
+
+.desktop-background {
+    background: url('deskt.jpg') no-repeat center center fixed; /* Replace wnith your wallpaper */
+    background-size: cover;
+    height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+    display: grid; /* Use CSS Grid for icons */
+    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr)); /* Create a responsive grid */
+    grid-auto-rows: min-content; /* Adjust rows based on content */
+    gap: 20px; /* Space between grid items (icons) */
+    align-items: start; /* Align icons to the top of their grid cells */
+    padding-top: 40px; /* Add some top padding for the first row of icons */
+}
+
+.icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(210, 225, 74, 0.8);
+    cursor: pointer;
+    justify-self: start; /* Align icons to the start of their grid cell */
+}
+
+.icon img {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 5px;
+}
+
+.icon span {
+    font-size: 0.9em;
+    text-align: center;
+}
+
+.taskbar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(174, 236, 154, 0.5); /* Semi-transparent dark background */
+    color: white;
+    padding: 8px 15px;
+    display: flex; /* Use Flexbox for taskbar items */
+    align-items: center;
+    box-sizing: border-box;
+    justify-content: space-between; /* Distribute space between start, search, pinned, and system tray */
+}
+
+.start-button {
+    background-color: transparent;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.start-button svg {
+    margin-right: 5px;
+}
+
+.search-bar {
+    background-color: rgba(216, 230, 174, 0.1);
+    border-radius: 5px;
+    padding: 5px;
+    margin-left: 10px;
+    flex-grow: 1; /* Allow search bar to take up available space */
+    max-width: 400px;
+}
+
+.search-bar input {
+    background-color: transparent;
+    color: white;
+    border: none;
+    padding: 8px;
+    width: 100%;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.search-bar input::placeholder {
+    color: #ddd;
+}
+
+.pinned-icons {
+    display: flex;
+    margin-left: 20px;
+}
+
+.pinned-icon {
+    background-color: transparent;
+    color: white;
+    padding: 5px;
+    margin-right: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.pinned-icon svg {
+    width: 24px;
+    height: 24px;
+}
+
+.system-tray {
+    display: flex;
+    align-items: center;
+}
+
+.system-tray > * {
+    margin-left: 10px;
+}

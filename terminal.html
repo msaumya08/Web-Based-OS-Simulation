@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terminal</title>
+    <link rel="stylesheet" href="terminal.css">
+</head>
+<body>
+    <div class="terminal-window">
+        <div class="terminal-header">
+            <span>Terminal</span>
+            <div class="window-controls">
+                <span class="close-button">×</span>
+            </div>
+        </div>
+        <div class="terminal-body">
+            <div class="terminal-output">
+                <p><span class="user">user@virtual:</span><span class="prompt">$</span> ls -l</p>
+                <p>-rw-r--r-- 1 user user 1024 Apr 18 22:25 document.txt</p>
+                <p>drwxr-xr-x 2 user user 4096 Apr 18 22:25 downloads</p>
+                <p><span class="user">user@virtual:</span><span class="prompt">$</span> cd downloads</p>
+                <p><span class="user">user@virtual:</span><span class="prompt">$</span> </p>
+            </div>
+            <div class="terminal-input">
+                <span class="user">user@virtual:</span><span class="prompt">$</span> <input type="text" autofocus>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

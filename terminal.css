@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+    font-family: monospace, sans-serif; /* Use a monospace font for the terminal look */
+    background-color: #333; /* Dark background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.terminal-window {
+    background-color: #222; /* Darker window background */
+    color:rgb(190, 236, 170); /* Light text color */
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(35, 208, 16, 0.6);
+    width: 80%;
+    max-width: 900px;
+    height: 70%;
+    max-height: 700px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.terminal-header {
+    background-color: #444;
+    padding: 10px 15px;
+    border-bottom: 1px solid #555;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.window-controls {
+    display: flex;
+    gap: 8px;
+}
+
+.close-button {
+    color:rgb(111, 214, 21);
+    background-color: #d44;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 1;
+}
+
+.terminal-body {
+    padding: 15px;
+    flex-grow: 1;
+    overflow-y: auto; /* Allow scrolling for long output */
+    display: flex;
+    flex-direction: column;
+}
+
+.terminal-output p {
+    margin: 5px 0;
+    line-height: 1.4;
+}
+
+.terminal-input {
+    padding-top: 10px;
+    border-top: 1px solid #555;
+    display: flex;
+    align-items: center;
+}
+
+.terminal-input span {
+    color: #6af; /* User color */
+}
+
+.prompt {
+    color: #fc3; /* Prompt color */
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.terminal-input input {
+    background-color: transparent;
+    color:rgb(0, 0, 0);
+    border: none;
+    outline: none;
+    flex-grow: 1;
+    font-family: monospace, sans-serif;
+    font-size: 1em;
+}
